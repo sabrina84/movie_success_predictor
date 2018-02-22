@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+<style>
+    body{
+         background-image:  url("bg.jpg");
+        background-color: aquamarine;
+    }
+</style>
+<body>
+    <form name="form" action="{% url "getInfo" %}" method="post">{% csrf_token %}
+        <div style="max-width: 470px;" >
+            <font face="Comic sans MS" size="6" color="green">(If not assigned, put 'n/a'.)</font>
+
+            <br><br>
+                    <font face="Comic sans MS" size="5" >Director:</font>
+
+
+                <input type="text" style="margin-left: 20%;" placeholder="Director" name="director" required/>
+
+        </div>          <br>
+        <div style="max-width: 470px;" >
+                    <font face="Comic sans MS" size="5" >Genre 1:</font>
+
+
+                <input type="text" style="margin-left: 20%;" placeholder="Genre1" name="genre1" required />
+
+        </div>          <br>
+         <div style="max-width: 470px;" >
+                     <font face="Comic sans MS" size="5">Genre 2:</font>
+
+
+                <input type="text" style="margin-left: 20%;" placeholder="Genre2" name="genre2" />
+
+        </div>          <br>
+        <div style="max-width: 470px;" >
+                    <font face="Comic sans MS" size="5">Actor 1:</font>
+
+
+                <input type="text" style="margin-left: 20%;" placeholder="Actor1" name="actor1" required />
+
+        </div>          <br>
+         <div style="max-width: 470px;" >
+                     <font face="Comic sans MS" size="5">Actor 2:</font>
+
+
+                <input type="text" style="margin-left: 20%;" placeholder="Actor2" name="actor2" required />
+
+        </div>          <br>
+         <div style="max-width: 470px;" >
+                     <font face="Comic sans MS" size="5">Actor 3:</font>
+
+
+                <input type="text" style="margin-left: 20%;" placeholder="Actor3" name="actor3" />
+
+        </div>          <br>
+         <div style="max-width: 470px;" >
+                     <font face="Comic sans MS" size="5">Actor 4:</font>
+
+
+                <input type="text" style="margin-left: 20%;" placeholder="Actor4" name="actor4" />
+
+        </div>          <br>
+         <div style="max-width: 470px;" >
+
+                     <font face="Comic sans MS" size="5">Actor 5:</font>
+
+                <input type="text" style="margin-left: 20%;" placeholder="Actor5" name="actor5" />
+
+        </div>          <br>
+         <div style="max-width: 470px;" >
+
+                     <font face="Comic sans MS" size="5" >Actor 6:</font>
+
+                <input type="text" style="margin-left: 20%;" placeholder="Actor6" name="actor6" />
+
+        </div>          <br>
+
+        <div style="max-width: 470px;" >
+
+                <button style="border: 0px; background-color: #4285F4; margin-top: 8%; height: 35px; width: 80%; margin-left: 19%"
+                        type="submit" value="Submit"><strong>Submit</strong></button>
+
+        </div>
+
+    </form>
+</body></html>
+
+
+
+
+
